@@ -10,35 +10,45 @@
 
 </head>
 
-<body>
+<body class="page-body">
     <div class="container">
         <form action="" method="get" id="form-add-info">
 
-            <h1>Biglietti</h1>
+            <h1 class="text-center py-4">BIGLIETTI</h1>
 
             <div class="d-flex">
 
                 <div class="mb-3 col-4 p-3" >
-                    <label for="basic-url" class="form-label">Nome Cognome</label>
+                    <label for="user-name" class="form-label">Nome Cognome</label>
                     <div class="input-group">
                     <input type="text" class="form-control" id="user-name" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                 </div>
 
                 <div class="mb-3 col-4 p-3" >
-                    <label for="basic-url" class="form-label">Km da parcorrere</label>
+                    <label for="user-km" class="form-label">Km da parcorrere</label>
                     <div class="input-group">
                     <input type="text" class="form-control" id="user-km" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                 </div>
 
                 <div class="mb-3 col-4 p-3" >
-                    <label for="basic-url" class="form-label">Età</label>
+                    <label for="user-age" class="form-label">Età</label>
                     <div class="input-group">
                     <input type="text" class="form-control" id="user-age" aria-describedby="basic-addon3 basic-addon4">
                     </div>
                 </div>
 
+            </div>
+
+            <div class="p-3">
+            <label for="destinazione" class="mb-2"> Scegli destinazione</label>
+            <select  id="destinazione" class="form-select mb-5" aria-label="Default select example">
+                <option value="londra" selected>LONDRA</option>
+                <option value="parigi">PARIGI</option>
+                <option value="roma">ROMA</option>
+                <option value="barcellona">BARCELLONA</option>
+              </select>
             </div>
 
             <div class="text-center">
@@ -50,37 +60,7 @@
 
         </form>
 
-        
-
-
-
-    
-    
-    <!-- 
-    <form action="" method="get" id="form-add-info">
-        <div class="mb-3">
-            <label for="new-element" class="form-label">Nuovo elemento</label>
-            <input id="user-age" type="text" placeholder="età" name="user-age">
-            <input id="user-km" type="text" placeholder="km" name="user-km">
-            
-        </div>
-        <button type="submit" class="btn btn-primary">Aggiungi</button>
-    </form>>
-
-    -->
-
-
-    <div id="result" class="container my-5">
-
-      
-
-    </div>
-
-
-
-
-
-
+    <div id="result" class="container my-5"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./script/app.js"></script>
@@ -88,23 +68,3 @@
 
 </html>
 
-<!--
-<div class="card mb-3" >
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/londra.jpeg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">nome</h5>
-                  <div>biglietto standard</div>
-                  <div>carrozza</div>
-                  <div>codice cp</div>
-                  <div>costo biglietto</div>
-
-                </div>
-              </div>
-            </div>
-        </div>
-
--->
