@@ -1,3 +1,17 @@
 .page-body{
     background-color: rgb(154, 188, 197);
 }
+
+.card-body > *{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-body h2{
+    font-size: 30px;
+}
+
+
+img{
+    min-height: 100%;
+}

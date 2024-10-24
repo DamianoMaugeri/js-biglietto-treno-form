@@ -12,15 +12,12 @@ const formElement = document.getElementById('form-add-info');
 
 const destinationElement = document.getElementById('destinazione');
 
-
-
-
+const result = document.getElementById('result');
 
 const priceForKm = 0.21; // numero
 
 let formattedPrice = 0;
 
-const result = document.getElementById('result');
 
 // config img
 const imgLondra ='./img/londra.jpeg'
@@ -108,67 +105,76 @@ formElement.addEventListener('submit', function (event) {
     const domElementContenitore = document.createDocumentFragment(); //<template></template>
 
 
-
+//card
     const divElementCard = document.createElement('div');
     divElementCard.classList.add('card');
     divElementCard.classList.add('mb-3');
 
-
+//row
     const divElementRow = document.createElement('div');
     divElementRow.classList.add('row');
     divElementRow.classList.add('g-0');
 
     
-
+//col-4
     const divElementCol4 = document.createElement('div');
     divElementCol4.classList.add('col-md-4');
 
     
-
+//col-8
     const divElementCol8 = document.createElement('div');
     divElementCol8.classList.add('col-md-8');
 
+// card body
     const divElementCardBody = document.createElement('div');
     divElementCardBody.classList.add('card-body');
 
 
-
+// img
     const imgElement = document.createElement('img');
     imgElement.classList.add('img-fluid');
     imgElement.classList.add('rounded-start');
 
     imgElement.src = finalImg;
 
-    const titleElement = document.createElement('h5');
+// card title
+    const titleElement = document.createElement('h2');
     titleElement.classList.add('card-title')
 
     titleElement.innerHTML = userName;
 
+// tipo biglietto
     const divElementTipoBiglietto = document.createElement('div');
 
     divElementTipoBiglietto.innerHTML = bigliettoBase;
 
-
+// codice cp
     const divElementCodice = document.createElement('div');
 
     divElementCodice.innerHTML = codiceCP;
 
+// carrozza
     const divElementCarrozza = document.createElement('div');
 
     divElementCarrozza.innerHTML = carrozza;
 
+// età
     const divElementAge = document.createElement('div');
 
     divElementAge.innerHTML = userAge;
 
+// km
     const divElementKm = document.createElement('div');
 
     divElementKm.innerHTML = numeroKm;
 
+// prezzo
     const divElementPrice = document.createElement('div');
 
     divElementPrice.innerHTML = formattedPrice;
 
+
+// APPEND 
 
     divElementCard.appendChild(divElementRow);
     divElementRow.appendChild(divElementCol4);
